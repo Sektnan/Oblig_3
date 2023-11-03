@@ -1,0 +1,137 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 6px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .search-form {
+        margin-left: auto;
+    }
+
+    .product-list {
+        padding: 10px;
+    }
+
+    article {
+        flex-basis: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Trodde jeg hadde gjort sånn at
+det ble tre kolonner når jeg bytta til mobilvisning,
+men det viste seg å ikke bli sånn.Jeg føler jeg har 
+gjort ting riktig, men det reflekteres ikke like godt 
+på siden, så jeg vet rett og slett ikke hva mer jeg 
+kan gjøre, hadde nok hatt bruk for øvingstimene, 
+men gitt at jeg gjorde det her på en dag (i dag),
+pga sykdom så syns jeg det ble HELT OK, gjort mitt 
+beste og håper det holder.  
+
+Jeg har brukt chatgpt til å dobbeltsjekke absolutt alt jeg har gjort, 
+men har ikke klippet og limet da, bare sjekka og sjekka og sjekka igjen og igjen.
+jeg har basically ikke deltatt på undervisningene de siste 3-4 ukene
+pga sykdom, det vil si, jeg har deltatt på undervisningene, men har dermed 
+ikke fått med meg en dritt tydeligvis, og på grunn av det så følte jeg
+meg absolutt ikke sikker nok på mitt eget arbeid til å ikke dobbeltsjekke i huet
+og ja, resten.*/
